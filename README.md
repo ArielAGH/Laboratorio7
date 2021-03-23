@@ -72,12 +72,33 @@ Luego se encienden las fuentes para realizar el análisis del circuito a transfo
 
 ![](https://github.com/ArielAGH/Laboratorio7/blob/main/Img/VoltajeCircuitoThevenin.png)
 
-## 5. CONCLUSIONES
+## 5. TABLAS DE MEDICIÓN Y CÁLCULOS
 
-El osciloscopio es un instrumento de medición útil para el análisis de distintos tipos de señales ya que es posible determinar la frecuencia y periodo de la señal mediante los datos proporcionados por las perillas de ajuste del osciloscopio y la grafica proporcionada por este mismo. Además, es posible determinar voltajes en distintos puntos de la función y es posible observar gráficamente la forma se cada señal.
+![](https://github.com/ArielAGH/Laboratorio7/blob/main/Img/Tabla51.png)
 
-## 9. BIBLIOGRAFÍA
+![](https://github.com/ArielAGH/Laboratorio7/blob/main/Img/ErroresTabla51.png)
+
+![](https://github.com/ArielAGH/Laboratorio7/blob/main/Img/Tabla52.png)
+
+![](https://github.com/ArielAGH/Laboratorio7/blob/main/Img/ErroresTabla52.png)
+
+Los cálculos respectivos están en la carpeta denominada Cálculos y para el cálculo del error en cada malla se usa la siguiente fórmula para los casos respectivos.
+
+![](https://github.com/KevinCaillamara/Laboratorio_2/blob/main/Im%C3%A1genes/formula_error.png)
+
+## 6. ANÁLISIS DE RESULTADOS
+
+De las observaciones registradas en la tabla de resultados es posible notar que no existe una variación significativa en los resultados obtenidos, lo que comprueba la efectividad de la aplicación del teorema.  
+
+Al momento de realizar la simulación con el teorema de Thévenin  ya aplicado el propio simulador  no admitió el valor de  5.06 para la fuente de voltaje (Vth) lo que  provoca la variacion entre los valores medidos  tanto en corriente como en voltaje.
+
+## 7. CONCLUSIONES
+
+En conclusión, se pudo observar que el teorema de Thévenin si cumple con su enunciado y es de gran ayuda para el análisis de circuitos complejos con resistencia de carga variable ya que los transforma en un circuito serie de dos resistencias, siendo una de estas la resistencia de carga (RL), también el cálculo de las magnitudes de  la resistencia de carga  se ven facilitados porque resultará sencillo aplicar la ley de ohm en RL a comparación de realizar el respectivo análisis en el circuito original.
+
+## 8. BIBLIOGRAFÍA
 
 * Durán, J. (2012). *Electrotecnia*. Barcelona: Editorial Lexus.
-* Hetpro. (2018). *Osciloscopio ¿Qué es? y ¿Cómo se usa?* Obtenido de: https://hetpro-store.com/TUTORIALES/osciloscopio/
-* ToolBoom. (2015). *Osciloscopios: historia y clasificación.* Obtenido de: https://toolboom.com/es/articles-and-video/oscilloscopes-history-and-classification/
+* Fraile, J. (2012). *Circuitos eléctricos*. Madrid: Editorial Pearson.
+* Thomas, L. (2007). *Principios de circuitos eléctricos*. México: Editorial Pearson.
+* Sadiku, M. (2006). *Fundamentos de circuitos eléctricos*. México: McGraw Hill Interamericana.
