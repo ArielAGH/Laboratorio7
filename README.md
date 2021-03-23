@@ -10,96 +10,67 @@ Integrantes: Caillamara Leonardo, González Ariel
 
 ## 2. MARCO TEÓRICO
 
-![](https://github.com/ArielAGH/Laboratorio6/blob/main/Img/Osciloscopio.png)
+# Teorema de Thévenin
 
-El osciloscopio es un instrumento de medida con el que visualizamos, por medio de una pantalla, la forma de las señales eléctricas que atraviesan un circuito en un periodo de tiempo.
+![](https://github.com/ArielAGH/Laboratorio7/blob/main/Img/MarcoTeorico1.png)
 
-El osciloscopio consta de dos ejes, el eje x es del tiempo y el eje y es para los valores de voltaje medidos.
+El teorema de Thévenin recibe su nombre gracias al ingeniero en telégrafos León Charles Thévenin en 1883.
 
-Dependiendo de su diseño pueden analizar señales con mayor frecuencia de operación en el orden de: Hz, MHz, GHz.
+Este teorema nos indica que: Cualquier circuito lineal abierto en los terminales a y b, por más complejo que este sea, es posible reemplazarlo por un circuido en el que consta de una fuente de voltaje y una resistencia en serie, unidas a dichos terminales a y b.
 
-![](https://github.com/ArielAGH/Laboratorio6/blob/main/Img/Osciloscopio2.png)
-![](https://github.com/ArielAGH/Laboratorio6/blob/main/Img/Onda.png)
+El voltaje de dicha fuente recibe el nombre de voltaje de Thévenin (Vth) y el nombre de la resistencia como resistencia de Thévenin (Rth)
 
-### Partes del Osciloscopio
+Este teorema es utilizado cuando en un circuito existe una carga variable ( llamada resistencia de carga RL ) en un circuito fijo, ya sea un resistor u otro circuito cuyo valor varíe. Por ejemplo, cuando se pone a cargar distintos dispositivos electrónicos a un solo cargador o cuando se conectan distintos electrodomésticos a un tomacorriente. Los circuitos fijos al contrario de los variables estos no varían sus valores y son los que se van a reducir. Un ejemplo claro de estos circuitos es la red eléctrica del hogar. 
 
-Partes externas
+![](https://github.com/ArielAGH/Laboratorio7/blob/main/Img/MarcoTeorico2.png)
 
-![](https://github.com/ArielAGH/Laboratorio6/blob/main/Img/PartesExternas.png)
+Aunque los electrodomésticos todos juntos son tomados como circuitos variables, individualmente representan a un circuito fijo como es el caso de un televisor Smart cuyo consumo es distinto a uno de los años 90’s pero individualmente son circuitos con un consumo fijo. 
 
-Partes internas
+![](https://github.com/ArielAGH/Laboratorio7/blob/main/Img/MarcoTeorico3.png)
 
-![](https://github.com/ArielAGH/Laboratorio6/blob/main/Img/PartesInternas.png)
+Método de solución:
 
-### Tipos de Osciloscopios
+Para poder aplicar este teorema es necesario tener conocimiento varios métodos estudiados previamente como lo son: resolución de circuitos por medio de mallas y nodos, superposición, resistencia equivalente, etc.
 
-Existen dos tipos marcados de osciloscopios:
+Primero se calcula la resistencia de Thévenin apagando todas las fuentes y al igual que en superposición a las fuentes de voltaje se las remplaza por un corto circuito, mientras que las de corriente se las reemplaza por un circuito abierto. A final se determina la resistencia equivalente en los terminales donde va conectada la resistencia de carga.
 
-1. Analógicos.- Es un instrumento que utiliza tubos de rayos catódicos para proyectar lecturas en una pantalla con recubrimiento de fósforo.
-2. Digitales.- Este instrumento usa un conversor analógico digital para representar las mediciones en un display LCD.
-
-### Aplicaciones
-
-El osciloscopio es utilizado para determinar las realizar análisis y testeo de señales ya que a simple vista no podemos visualizar la forma de estas señales. Un ejemplo muy claro es determinar si un circuito que transforma corriente alterna en continua de verdad cumple con su función o existe algún desperfecto.
-
-Otro uso importante es al momento de medir un circuito y no se sabe la frecuencia de operación de este no es posible tomar medidas con un polímetro es necesario utilizar un osciloscopio.
-
-En la parte de visualización de imágenes con este dispositivo de medida es posible retener señales y analizarlas en escalas sin alterar la frecuencia a la que trabaja el circuito. En modelos más actuales el osciloscopio puede captar dos señales eléctricas. 
+Luego se encienden las fuentes para realizar el análisis del circuito a transformar y determinar el valor del voltaje (Vth) entre los terminales a – b donde se ubica RL. 
 
 ## 3. EQUIPOS Y MATERIALES
 
-* **Generador de funciones:** Discpositivo capaz de modificar la forma de la señal de entrada.
-* **Protoboard:** Es una placa de pruebas en la que se pueden insertar elementos electrónicos. En este caso Proteus utiliza un plano infinito como protoboard.
+* **TinkerCad:** Programa online de simulación de circuitos.
+* **Protoboard:** Es una placa de pruebas en la que se pueden insertar elementos electrónicos y cables con los que se arman circuitos sin la necesidad de soldar ninguno de los elementos.
 * **Resistencias eléctricas:** Elemento eléctrico que se opone al paso de corriente.
 * **Cables puente:** Cables de ayuda para realizar conexiones provisionales.
 * **Multímetro:** Es un instrumento analógico o digital portátil que se usa para medir directamente magnitudes eléctricas.
-* **Osciloscopio:** Instrumento de medida capaz de graficar ondas de señales eléctricas.
+* **Batería o fuente energética:** Dispositivo que provee energía a un circuito al cual es conectado.
 
 ## 4. PROCEDIMIENTO
 
-4.1. Implemente el circuito que se presenta en la figura 7.1
+4.1. Arme el circuito de la figura en TinkerCad
 
-![](https://github.com/ArielAGH/Laboratorio6/blob/main/Img/Circuito.png)
+![](https://github.com/ArielAGH/Laboratorio7/blob/main/Img/Circuito.png)
 
-4.2. Ajuste el generador de funciones, para que proporcione una señal de 20 Vpp a
-una frecuencia de 2.5 Khz.
+4.2. Mida el voltaje y la corriente en el resistor R5, anote los resultados en la tabla 5.2.
 
-4.3. Conecte el osciloscopio al resistor de carga RL. Observe la señal que aparece en
-el osciloscopio.
+![](https://github.com/ArielAGH/Laboratorio7/blob/main/Img/VoltajeCircuitoCompleto.png)
 
-### 4.4. Responda las siguientes preguntas:
+![](https://github.com/ArielAGH/Laboratorio7/blob/main/Img/CorrienteCircuitoCompleto.png)
 
-![](https://github.com/ArielAGH/Laboratorio6/blob/main/Img/DCACLab.png)
 
-##### ¿Cuántas divisiones por cuadro abarca la amplitud pico de la señal de salida?
-Abarca 3 voltios por cuadro.
+4.3. Desconecte el resistor R5 y mida el voltaje en el circuito abierto. Anote el valor medido en la tabla 5.1.
 
-##### ¿En qué valor está posicionada la perilla VOLTS/DIV?
-En el valor de 3.
+![](https://github.com/ArielAGH/Laboratorio7/blob/main/Img/VoltajeDeThevenin.png)
 
-##### ¿Cuántas divisiones por cuadro abarca el ciclo completo de la señal de salida?
-Abarca 4 divisiones.
+4.4. Anule el efecto de las fuentes de alimentación. Desconecte R5 y desde el circuito abierto resultante mida la resistencia equivalente. Anote el valor medido en la tabla 5.1.
 
-##### ¿En qué valor está posicionada la perilla TIME/DIV?
-En 0.1 mili segundos.
+![](https://github.com/ArielAGH/Laboratorio7/blob/main/Img/ResistenciaDeThevenin.png)
 
-### 4.5. ¿Cuál es la amplitud de voltaje y el período de la señal que aparece en la pantalla del osciloscopio?
-<pre><code>
-Amplitud de voltaje: 6.83 (V).
-Período: 0.4 (ms).
-</code></pre>
+4.5. Implemente el circuito equivalente de Thévenin, agregue el resistor R5 y mida la corriente y el voltaje en el mismo, anote los resultados en la tabla 5.2.
 
-### 4.6. Determine la frecuencia natural (Hz) y la frecuencia angular (rad/s) de la señal de salida.
-<pre><code>
-f: 2500 (Hz)
-w: 15707.96 (rad/s)
-</code></pre>
+![](https://github.com/ArielAGH/Laboratorio7/blob/main/Img/CorrienteCircuitoThevenin.png)
 
-### 4.7. Con el multímetro digital mida el voltaje de salida de RL:
-Es de 4.8 (V).
-
-### 4.8. Compare el voltaje medido en el punto 4.5. y el obtenido en el punto 4.7. ¿Coinciden? ¿Por qué?
-Los valores no coinciden debido a que el voltaje del numeral 4.5. está medido desde el osciloscopio, lo que significa que es un valor de voltaje pico. Por otro lado, el voltaje del numeral 4.7. es menor puesto que el multímetro usado para su medición nos muestra el voltaje rms.
+![](https://github.com/ArielAGH/Laboratorio7/blob/main/Img/VoltajeCircuitoThevenin.png)
 
 ## 5. CONCLUSIONES
 
